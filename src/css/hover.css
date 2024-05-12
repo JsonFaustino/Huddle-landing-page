@@ -1,0 +1,51 @@
+/* ==============================
+   ESTILOS AL HACER CLICK O (HOVER)
+   ============================== */
+
+@media (hover: hover) {
+  /* BUTTON PINK */
+  .buttonPink:hover,
+  .buttonPink:active {
+    transition: all 500ms;
+    background-color: initial;
+    background-position: 0 0;
+    color: var(--black);
+  }
+  .buttonPink:active {
+    opacity: 0.5;
+  }
+
+  /* LINK FOOT */
+  .list__link:hover,
+  .list__link:active {
+    color: var(--grayish-blue);
+  }
+  .list__link:active {
+    opacity: 0.5;
+  }
+
+  /* ARTICLES */
+  .article__figure img:hover {
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+  }
+
+  .articles > figure:not(:hover) {
+    filter: grayscale(100);
+    transition: all ease 0.5s;
+  }
+  .articles > figure {
+    filter: grayscale(0);
+    transition: all ease 1.5s;
+  }
+
+  .articles figure,
+  .articles img {
+    filter: saturate(0.8);
+    transition: all ease 1.5s;
+  }
+  .articles figure:hover {
+    filter: saturate(3);
+    transition: all ease 0.5s;
+  }
+}
